@@ -20,6 +20,7 @@ public class App
     {
         System.setProperty("webdriver.chrome.driver", "/Users/HM/Downloads/chromedriver-2");
         ChromeOptions chromeOption = new ChromeOptions();
+        chromeOption.addArguments("--headless");
         WebDriver driver = new ChromeDriver(chromeOption);
         System.out.println( "Hi Edureka!" );
         
